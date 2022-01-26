@@ -109,14 +109,12 @@
   "ignoreTowerForSelection": false,
   "behaviors": [
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.PlayAnimationIndexModel, Assembly-CSharp",
       "placeAnimation": 6,
       "upgradeAnimation": 4,
       "name": "PlayAnimationIndexModel_Adora 6",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.PlayAnimationIndex, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnSellModel, Assembly-CSharp",
       "effectModel": {
         "assetId": "b1dec8a8d79593843bc2e2410eae944e",
         "scale": 1.0,
@@ -135,7 +133,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnSell, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnBloonEnterTrackModel, Assembly-CSharp",
       "moabSound": {
         "assetId": "21983fbf419d0864c8c2b8627b372341",
         "name": "SoundModel_AdoraMoabWarningSound",
@@ -165,7 +162,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnBloonEnterTrack, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnBloonLeakModel, Assembly-CSharp",
       "sound1": {
         "assetId": "2698abd09867ec44db527ac526ddc219",
         "name": "SoundModel_AdoraLeakSound01",
@@ -180,7 +176,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnBloonLeak, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnSelectedModel, Assembly-CSharp",
       "sound1": {
         "assetId": "8a30fde0830676e42a5c35e0fc90418f",
         "name": "SoundModel_AdoraSelectSound01",
@@ -225,7 +220,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnSelected, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnUpgradeModel, Assembly-CSharp",
       "sound": {
         "assetId": "23a777b9950195f4f8f4bf745ef84031",
         "name": "SoundModel_UpgradeSound",
@@ -275,7 +269,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnUpgrade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnSellModel, Assembly-CSharp",
       "sound": {
         "assetId": "df4c691ccf8a3c7408ed6f156740c8b7",
         "name": "SoundModel_SellSound",
@@ -285,7 +278,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnSell, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnTowerPlaceModel, Assembly-CSharp",
       "sound1": {
         "assetId": "0782b04f742eb2542bc8266a38241c5b",
         "name": "SoundModel_PlaceSound1",
@@ -310,7 +302,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnTowerPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnPlaceModel, Assembly-CSharp",
       "effectModel": {
         "assetId": "708be580149dc444d89314b6d9f388e9",
         "scale": 1.0,
@@ -329,7 +320,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnUpgradeModel, Assembly-CSharp",
       "effectModel": {
         "assetId": "9e800b22f83685141bcb398b78331495",
         "scale": 1.0,
@@ -348,21 +338,18 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnUpgrade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.HeroModel, Assembly-CSharp",
       "xpScale": 1.0,
       "costPerXpToLevel": 1.0,
       "name": "HeroModel_",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Hero, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.AttackModel, Assembly-CSharp",
       "weapons": [
         {
           "animation": 1,
           "animationOffset": 0.0,
           "animationOffsetFrames": 0,
           "emission": {
-            "$type": "Assets.Scripts.Models.Towers.Behaviors.Emissions.AdoraEmissionModel, Assembly-CSharp",
             "count": 3,
             "angleBetween": 30.0,
             "behaviors": null,
@@ -383,7 +370,6 @@
             "canCollisionBeBlockedByMapLos": false,
             "filters": [
               {
-                "$type": "Assets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
                 "isActive": true,
                 "ignoreBroadPhase": false,
                 "name": "FilterInvisibleModel_",
@@ -392,7 +378,6 @@
             ],
             "behaviors": [
               {
-                "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModel, Assembly-CSharp",
                 "damage": 1.0,
                 "maxDamage": 0.0,
                 "distributeToChildren": true,
@@ -405,10 +390,8 @@
                 "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.Damage, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
               },
               {
-                "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
                 "filters": [
                   {
-                    "$type": "Assets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
                     "isActive": true,
                     "ignoreBroadPhase": false,
                     "name": "FilterInvisibleModel_",
@@ -420,7 +403,6 @@
                 "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.ProjectileFilter, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
               },
               {
-                "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.AddBehaviorToBloonModel, Assembly-CSharp",
                 "mutationId": "CreateSoundOnBloonDegrade",
                 "lifespan": 0.05,
                 "layers": 1,
@@ -429,7 +411,6 @@
                 "filters": null,
                 "behaviors": [
                   {
-                    "$type": "Assets.Scripts.Models.Bloons.Behaviors.CreateSoundOnBloonDegradeModel, Assembly-CSharp",
                     "sound1": {
                       "assetId": "77181f94d55d02949abbfc4ba780e579",
                       "name": "SoundModel_AdoraMoabDestroyedSound01",
@@ -459,7 +440,6 @@
                 "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.AddBehaviorToBloon, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
               },
               {
-                "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.AdoraTrackTargetModel, Assembly-CSharp",
                 "rotation": 9.0,
                 "minimumSpeed": 70.0,
                 "minimumSpeedFrames": 1.16666675,
@@ -477,7 +457,6 @@
                 "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.AdoraTrackTarget, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
               },
               {
-                "$type": "Assets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
                 "display": "dfc16ec49f4894148bce0161ebb0bd32",
                 "layer": 0,
                 "positionOffset": {
@@ -519,7 +498,6 @@
           "fireBetweenRounds": false,
           "behaviors": [
             {
-              "$type": "Assets.Scripts.Models.Towers.Weapons.Behaviors.CreateSoundOnProjectileCreatedModel, Assembly-CSharp",
               "sound1": {
                 "assetId": "a010f024580fa77418eb28e4559bd3cc",
                 "name": "SoundModel_AdoraAttackSound01",
@@ -562,7 +540,6 @@
       ],
       "behaviors": [
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.RotateToTargetModel, Assembly-CSharp",
           "onlyRotateDuringThrow": true,
           "useThrowMarkerHeight": false,
           "rotateOnlyOnThrow": false,
@@ -573,38 +550,32 @@
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Behaviors.RotateToTarget, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         },
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetFirstModel, Assembly-CSharp",
           "isSelectable": true,
           "isOnSubTower": false,
           "name": "TargetFirstModel_",
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Behaviors.TargetFirst, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         },
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetLastModel, Assembly-CSharp",
           "isSelectable": true,
           "isOnSubTower": false,
           "name": "TargetLastModel_",
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Behaviors.TargetLast, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         },
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetCloseModel, Assembly-CSharp",
           "isSelectable": true,
           "isOnSubTower": false,
           "name": "TargetCloseModel_",
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Behaviors.TargetClose, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         },
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetStrongModel, Assembly-CSharp",
           "isSelectable": true,
           "isOnSubTower": false,
           "name": "TargetStrongModel_",
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Behaviors.TargetStrong, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         },
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.AttackFilterModel, Assembly-CSharp",
           "filters": [
             {
-              "$type": "Assets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
               "isActive": true,
               "ignoreBroadPhase": false,
               "name": "FilterInvisibleModel_",
@@ -629,7 +600,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Attack, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.Abilities.AbilityModel, Assembly-CSharp",
       "displayName": "The Long Arm of Light",
       "description": "",
       "icon": {
@@ -638,7 +608,6 @@
       },
       "behaviors": [
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.Abilities.Behaviors.CreateSoundOnAbilityModel, Assembly-CSharp",
           "sound": {
             "assetId": "0ef7381cc34694942b5fd855201287a6",
             "name": "SoundModel_AdoraUltimate3SoundNoVO",
@@ -658,7 +627,6 @@
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Abilities.Behaviors.CreateSoundOnAbility, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         },
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.Abilities.Behaviors.LongArmOfLightModel, Assembly-CSharp",
           "lifespanFrames": 599,
           "multiplier": 2.0,
           "projectileDisplay": {
@@ -686,7 +654,6 @@
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Abilities.Behaviors.LongArmOfLight, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         },
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.Abilities.Behaviors.CreateEffectOnAbilityModel, Assembly-CSharp",
           "effectModel": {
             "assetId": "99979256e793fc74db6c5a3172ad7770",
             "scale": 1.0,
@@ -726,6 +693,7 @@
       "sharedCooldown": false,
       "dontShowStacked": false,
       "animateOnMainAttackDisplay": false,
+      "restrictAbilityAfterMaxRoundTimer": false,
       "CooldownSpeedScale": 0.0,
       "AnimationOffset": 0.0,
       "IsPassive": false,
@@ -734,7 +702,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Abilities.Ability, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
       "display": "15108da496bdf514fb09d16f1b27f52f",
       "layer": -1,
       "positionOffset": {
@@ -755,7 +722,6 @@
     }
   ],
   "footprint": {
-    "$type": "Assets.Scripts.Models.Towers.Behaviors.CircleFootprintModel, Assembly-CSharp",
     "radius": 7.0,
     "doesntBlockTowerPlacement": false,
     "ignoresPlacementCheck": false,
@@ -822,6 +788,7 @@
   "ignoreCoopAreas": false,
   "canAlwaysBeSold": false,
   "isParagon": false,
+  "sellbackModifierAdd": 0.0,
   "isPowerTower": false,
   "IsBaseTower": false,
   "TargetTypes": [
