@@ -106,7 +106,6 @@
   "ignoreTowerForSelection": false,
   "behaviors": [
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.TowerExpireModel, Assembly-CSharp",
       "expireOnRoundComplete": false,
       "expireOnDefeatScreen": false,
       "lifespanFrames": 3599,
@@ -115,7 +114,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.TowerExpire, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnPlaceModel, Assembly-CSharp",
       "effectModel": {
         "assetId": "2b78079119d4db74d89d8863f9d65e70",
         "scale": 1.0,
@@ -134,7 +132,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnExpireModel, Assembly-CSharp",
       "effectModel": {
         "assetId": "2b78079119d4db74d89d8863f9d65e70",
         "scale": 1.0,
@@ -153,7 +150,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnExpire, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.MutationImunityTowerModel, Assembly-CSharp",
       "mutationIds": [
         "Village"
       ],
@@ -166,22 +162,18 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.MutationImunityTower, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.IgnoreAllMutatorsTowerModel, Assembly-CSharp",
       "name": "IgnoreAllMutatorsTowerModel_",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.IgnoreAllMutatorsTower, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.TowerExpireOnParentDestroyedModel, Assembly-CSharp",
       "name": "TowerExpireOnParentDestroyedModel_",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.TowerExpireOnParentDestroyed, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.SavedSubTowerModel, Assembly-CSharp",
       "name": "SavedSubTowerModel_",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.SavedSubTower, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnSellModel, Assembly-CSharp",
       "effectModel": {
         "assetId": "b1dec8a8d79593843bc2e2410eae944e",
         "scale": 1.0,
@@ -200,7 +192,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnSell, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnTowerPlaceModel, Assembly-CSharp",
       "sound1": {
         "assetId": "0782b04f742eb2542bc8266a38241c5b",
         "name": "SoundModel_PlaceSound1",
@@ -225,10 +216,9 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnTowerPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.RangeSupportModel, Assembly-CSharp",
-      "multiplier": 0.15,
+      "multiplier": 0.2,
       "additive": 0.0,
-      "mutatorId": "Village:Range",
+      "mutatorId": "SacrificialTotemRange",
       "isUnique": true,
       "filters": null,
       "isGlobal": false,
@@ -244,10 +234,9 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.RangeSupport, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.RateSupportModel, Assembly-CSharp",
       "multiplier": 0.85,
       "isUnique": true,
-      "mutatorId": "Village:Rate",
+      "mutatorId": "SacrificialTotemRate",
       "priority": 0,
       "filters": null,
       "isGlobal": false,
@@ -263,9 +252,8 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.RateSupport, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.VisibilitySupportModel, Assembly-CSharp",
       "isUnique": false,
-      "mutatorId": "Village:Visibility",
+      "mutatorId": "SacrificialTotemVisibility",
       "filters": null,
       "isGlobal": false,
       "isCustomRadius": false,
@@ -280,48 +268,10 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.VisibilitySupport, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.RangeSupportModel, Assembly-CSharp",
-      "multiplier": 0.1,
-      "additive": 0.0,
-      "mutatorId": "Village:PrimaryTraining:Range",
-      "isUnique": true,
-      "filters": [
-        {
-          "$type": "Assets.Scripts.Models.Towers.TowerFilters.FilterInSetModel, Assembly-CSharp",
-          "towerSets": [
-            "Primary"
-          ],
-          "name": "FilterInSetModel_",
-          "ImplementationType": "Assets.Scripts.Simulation.Towers.TowerFilters.FilterSet, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-        }
-      ],
-      "isGlobal": false,
-      "isCustomRadius": false,
-      "customRadius": 0.0,
-      "appliesToOwningTower": false,
-      "showBuffIcon": true,
-      "buffLocsName": "BuffIconSacrificialTotem",
-      "buffIconName": "BuffIconSacrificialTotem",
-      "maxStackSize": 0,
-      "onlyShowBuffIfMutated": false,
-      "name": "RangeSupportModel_PrimaryTraining_",
-      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.RangeSupport, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-    },
-    {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.PierceSupportModel, Assembly-CSharp",
       "pierce": 1.0,
-      "mutatorId": "Village:PrimaryTraining:Pierce",
+      "mutatorId": "SacrificialTotemPierce",
       "isUnique": true,
-      "filters": [
-        {
-          "$type": "Assets.Scripts.Models.Towers.TowerFilters.FilterInSetModel, Assembly-CSharp",
-          "towerSets": [
-            "Primary"
-          ],
-          "name": "FilterInSetModel_",
-          "ImplementationType": "Assets.Scripts.Simulation.Towers.TowerFilters.FilterSet, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-        }
-      ],
+      "filters": null,
       "isGlobal": false,
       "isCustomRadius": false,
       "customRadius": 0.0,
@@ -331,24 +281,14 @@
       "buffIconName": "BuffIconSacrificialTotem",
       "maxStackSize": 0,
       "onlyShowBuffIfMutated": false,
-      "name": "PierceSupportModel_PrimaryTraining_",
+      "name": "PierceSupportModel_Support_",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.PierceSupport, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.ProjectileSpeedSupportModel, Assembly-CSharp",
       "multiplier": 0.25,
-      "mutatorId": "Village:PrimaryTraining:ProjectileSpeed",
+      "mutatorId": "SacrificialTotemProjectileSpeed",
       "isUnique": true,
-      "filters": [
-        {
-          "$type": "Assets.Scripts.Models.Towers.TowerFilters.FilterInSetModel, Assembly-CSharp",
-          "towerSets": [
-            "Primary"
-          ],
-          "name": "FilterInSetModel_",
-          "ImplementationType": "Assets.Scripts.Simulation.Towers.TowerFilters.FilterSet, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-        }
-      ],
+      "filters": null,
       "isGlobal": false,
       "isCustomRadius": false,
       "customRadius": 0.0,
@@ -358,11 +298,10 @@
       "buffIconName": "BuffIconSacrificialTotem",
       "maxStackSize": 0,
       "onlyShowBuffIfMutated": false,
-      "name": "ProjectileSpeedSupportModel_PrimaryTraining_",
+      "name": "ProjectileSpeedSupportModel_Support_",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.ProjectileSpeedSupport, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
       "display": "63acfea4658f08e44989d6a399143509",
       "layer": -1,
       "positionOffset": {
@@ -383,7 +322,6 @@
     }
   ],
   "footprint": {
-    "$type": "Assets.Scripts.Models.Towers.Behaviors.CircleFootprintModel, Assembly-CSharp",
     "radius": 6.0,
     "doesntBlockTowerPlacement": false,
     "ignoresPlacementCheck": false,
@@ -408,6 +346,7 @@
   "ignoreCoopAreas": false,
   "canAlwaysBeSold": false,
   "isParagon": false,
+  "sellbackModifierAdd": 0.0,
   "isPowerTower": false,
   "IsBaseTower": true,
   "TargetTypes": null,

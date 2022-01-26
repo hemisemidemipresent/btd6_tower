@@ -109,21 +109,18 @@
   "ignoreTowerForSelection": false,
   "behaviors": [
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.HeroModel, Assembly-CSharp",
       "xpScale": 1.0,
       "costPerXpToLevel": 1.0,
       "name": "HeroModel_",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Hero, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.PlayAnimationIndexModel, Assembly-CSharp",
       "placeAnimation": 4,
       "upgradeAnimation": 3,
       "name": "PlayAnimationIndexModel_ObynGreenfoot 7",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.PlayAnimationIndex, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnSelectedModel, Assembly-CSharp",
       "sound1": {
         "assetId": "23c5478b141ea4b499fc6d04c4795356",
         "name": "SoundModel_SelectSound01",
@@ -168,7 +165,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnSelected, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnUpgradeModel, Assembly-CSharp",
       "sound": {
         "assetId": "23a777b9950195f4f8f4bf745ef84031",
         "name": "SoundModel_UpgradeSound",
@@ -218,7 +214,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnUpgrade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnSellModel, Assembly-CSharp",
       "sound": {
         "assetId": "df4c691ccf8a3c7408ed6f156740c8b7",
         "name": "SoundModel_SellSound",
@@ -228,7 +223,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnSell, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnPlaceModel, Assembly-CSharp",
       "effectModel": {
         "assetId": "708be580149dc444d89314b6d9f388e9",
         "scale": 1.0,
@@ -247,7 +241,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnUpgradeModel, Assembly-CSharp",
       "effectModel": {
         "assetId": "9e800b22f83685141bcb398b78331495",
         "scale": 1.0,
@@ -266,7 +259,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnUpgrade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnSellModel, Assembly-CSharp",
       "effectModel": {
         "assetId": "b1dec8a8d79593843bc2e2410eae944e",
         "scale": 1.0,
@@ -285,7 +277,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnSell, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnBloonLeakModel, Assembly-CSharp",
       "sound1": {
         "assetId": "72288d1ab52653d4fa62b7841c979e4c",
         "name": "SoundModel_BloonLeak01",
@@ -300,7 +291,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnBloonLeak, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnBloonEnterTrackModel, Assembly-CSharp",
       "moabSound": {
         "assetId": "9ceeb26ab05dfc643ba7af7c4e19620b",
         "name": "SoundModel_MoabWarningSound",
@@ -330,7 +320,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnBloonEnterTrack, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnTowerPlaceModel, Assembly-CSharp",
       "sound1": {
         "assetId": "0782b04f742eb2542bc8266a38241c5b",
         "name": "SoundModel_PlaceSound1",
@@ -355,14 +344,71 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnTowerPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.AttackModel, Assembly-CSharp",
+      "dotjRangeMultiplier": 0.2,
+      "dotsProjectileRadius": 0.0,
+      "dotsMoabDamage": 0.0,
+      "mmAbilityCooldownMultiplier": 0.0,
+      "mutatorIdRange": "",
+      "mutatorIdProjectileRadius": "",
+      "mutatorIdMoabDamage": "",
+      "mutatorIdCooldownMultiplier": "",
+      "damageModifierForTag": null,
+      "RangeMutator": {
+        "rangeModifier": 0.2,
+        "id": "",
+        "isExclusiveInMutationList": false,
+        "priority": 1,
+        "glueLevel": 0,
+        "isFreeze": false,
+        "dontCopy": false,
+        "buffIndicator": null,
+        "includesSubTowers": false,
+        "saveId": null
+      },
+      "ProjectileRadiusMutator": {
+        "dotsProjectileRadius": 0.0,
+        "id": "",
+        "isExclusiveInMutationList": false,
+        "priority": 1,
+        "glueLevel": 0,
+        "isFreeze": false,
+        "dontCopy": false,
+        "buffIndicator": null,
+        "includesSubTowers": false,
+        "saveId": null
+      },
+      "DamageTypeMutator": {
+        "id": "",
+        "isExclusiveInMutationList": false,
+        "priority": 1,
+        "glueLevel": 0,
+        "isFreeze": false,
+        "dontCopy": false,
+        "buffIndicator": null,
+        "includesSubTowers": false,
+        "saveId": null
+      },
+      "AbilityCooldownMutator": {
+        "id": "",
+        "isExclusiveInMutationList": false,
+        "priority": 1,
+        "glueLevel": 0,
+        "isFreeze": false,
+        "dontCopy": false,
+        "buffIndicator": null,
+        "includesSubTowers": false,
+        "saveId": null
+      },
+      "name": "ObynGlobalSupportModel_",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.ObynGlobalSupport, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
       "weapons": [
         {
           "animation": 1,
           "animationOffset": 0.0,
           "animationOffsetFrames": 0,
           "emission": {
-            "$type": "Assets.Scripts.Models.Towers.Behaviors.Emissions.SingleEmissionModel, Assembly-CSharp",
             "behaviors": null,
             "name": "SingleEmissionModel_",
             "ImplementationType": "Assets.Scripts.Simulation.Towers.Emissions.SingleEmission, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
@@ -381,7 +427,6 @@
             "canCollisionBeBlockedByMapLos": false,
             "filters": [
               {
-                "$type": "Assets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
                 "isActive": true,
                 "ignoreBroadPhase": false,
                 "name": "FilterInvisibleModel_",
@@ -390,7 +435,6 @@
             ],
             "behaviors": [
               {
-                "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModel, Assembly-CSharp",
                 "damage": 2.0,
                 "maxDamage": 0.0,
                 "distributeToChildren": true,
@@ -403,7 +447,6 @@
                 "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.Damage, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
               },
               {
-                "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.TravelStraitModel, Assembly-CSharp",
                 "lifespanFrames": 84,
                 "speedFrames": 2.70833349,
                 "collisionPass": 0,
@@ -413,10 +456,8 @@
                 "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.TravelStrait, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
               },
               {
-                "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
                 "filters": [
                   {
-                    "$type": "Assets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
                     "isActive": true,
                     "ignoreBroadPhase": false,
                     "name": "FilterInvisibleModel_",
@@ -428,7 +469,6 @@
                 "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.ProjectileFilter, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
               },
               {
-                "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.TrackTargetModel, Assembly-CSharp",
                 "distance": 227.5,
                 "trackNewTargets": true,
                 "constantlyAquireNewTarget": false,
@@ -443,7 +483,6 @@
                 "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.TrackTarget, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
               },
               {
-                "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.AddBehaviorToBloonModel, Assembly-CSharp",
                 "mutationId": "CreateSoundOnBloonDegrade",
                 "lifespan": 0.05,
                 "layers": 1,
@@ -452,15 +491,12 @@
                 "filters": null,
                 "behaviors": [
                   {
-                    "$type": "Assets.Scripts.Models.Bloons.Behaviors.CreateSoundOnBloonDegradeModel, Assembly-CSharp",
                     "sound1": {
-                      "$type": "Assets.Scripts.Models.Audio.BlankSoundModel, Assembly-CSharp",
                       "assetId": "",
                       "name": "BlankSoundModel_",
                       "ImplementationType": null
                     },
                     "sound2": {
-                      "$type": "Assets.Scripts.Models.Audio.BlankSoundModel, Assembly-CSharp",
                       "assetId": "",
                       "name": "BlankSoundModel_",
                       "ImplementationType": null
@@ -484,7 +520,6 @@
                 "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.AddBehaviorToBloon, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
               },
               {
-                "$type": "Assets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
                 "display": "7dab9307a6c990e4080909c76786237a",
                 "layer": 0,
                 "positionOffset": {
@@ -537,10 +572,8 @@
       ],
       "behaviors": [
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.AttackFilterModel, Assembly-CSharp",
           "filters": [
             {
-              "$type": "Assets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
               "isActive": true,
               "ignoreBroadPhase": false,
               "name": "FilterInvisibleModel_",
@@ -551,7 +584,6 @@
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Behaviors.AttackFilter, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         },
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.RotateToTargetModel, Assembly-CSharp",
           "onlyRotateDuringThrow": true,
           "useThrowMarkerHeight": false,
           "rotateOnlyOnThrow": false,
@@ -562,28 +594,24 @@
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Behaviors.RotateToTarget, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         },
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetFirstModel, Assembly-CSharp",
           "isSelectable": true,
           "isOnSubTower": false,
           "name": "TargetFirstModel_",
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Behaviors.TargetFirst, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         },
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetLastModel, Assembly-CSharp",
           "isSelectable": true,
           "isOnSubTower": false,
           "name": "TargetLastModel_",
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Behaviors.TargetLast, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         },
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetCloseModel, Assembly-CSharp",
           "isSelectable": true,
           "isOnSubTower": false,
           "name": "TargetCloseModel_",
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Behaviors.TargetClose, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         },
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetStrongModel, Assembly-CSharp",
           "isSelectable": true,
           "isOnSubTower": false,
           "name": "TargetStrongModel_",
@@ -604,7 +632,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Attack, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.Abilities.AbilityModel, Assembly-CSharp",
       "displayName": "Brambles",
       "description": "Brambles: Creates a spiked bush on the track that can pop 20 bloons.",
       "icon": {
@@ -613,7 +640,6 @@
       },
       "behaviors": [
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.Abilities.Behaviors.ActivateAttackModel, Assembly-CSharp",
           "lifespanFrames": 0,
           "attacks": [
             {
@@ -623,7 +649,6 @@
                   "animationOffset": 0.0,
                   "animationOffsetFrames": 0,
                   "emission": {
-                    "$type": "Assets.Scripts.Models.Towers.Behaviors.Emissions.SingleEmissionModel, Assembly-CSharp",
                     "behaviors": null,
                     "name": "SingleEmissionModel_",
                     "ImplementationType": "Assets.Scripts.Simulation.Towers.Emissions.SingleEmission, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
@@ -643,7 +668,6 @@
                     "filters": null,
                     "behaviors": [
                       {
-                        "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModel, Assembly-CSharp",
                         "damage": 1.0,
                         "maxDamage": 0.0,
                         "distributeToChildren": true,
@@ -656,7 +680,6 @@
                         "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.Damage, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                       },
                       {
-                        "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.AgeModel, Assembly-CSharp",
                         "rounds": 1,
                         "lifespanFrames": 7200,
                         "useRoundTime": false,
@@ -667,7 +690,6 @@
                         "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.Age, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                       },
                       {
-                        "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.ClearHitBloonsModel, Assembly-CSharp",
                         "interval": 0.001,
                         "intervalFrames": 0,
                         "collisionPass": 0,
@@ -675,21 +697,18 @@
                         "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.ClearHitBloons, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                       },
                       {
-                        "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
                         "filters": null,
                         "collisionPass": 0,
                         "name": "ProjectileFilterModel_Projectile",
                         "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.ProjectileFilter, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                       },
                       {
-                        "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.InstantModel, Assembly-CSharp",
                         "destroyIfInvalid": false,
                         "collisionPass": 0,
                         "name": "InstantModel_",
                         "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.Instant, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                       },
                       {
-                        "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.CreateEffectOnExhaustedModel, Assembly-CSharp",
                         "effectModel": null,
                         "assetId": "bb65ffc8851018b45a52c9fb7818f309",
                         "lifespan": 6.0,
@@ -700,7 +719,6 @@
                         "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.CreateEffectOnExhausted, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                       },
                       {
-                        "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.AddBehaviorToBloonModel, Assembly-CSharp",
                         "mutationId": "CreateSoundOnBloonDegrade",
                         "lifespan": 120.0,
                         "layers": 1,
@@ -709,7 +727,6 @@
                         "filters": null,
                         "behaviors": [
                           {
-                            "$type": "Assets.Scripts.Models.Bloons.Behaviors.CreateSoundOnBloonDegradeModel, Assembly-CSharp",
                             "sound1": {
                               "assetId": "73ec0da3eaedf1e4081837fcd9dc1609",
                               "name": "SoundModel_MoabDestroyedSound01",
@@ -739,7 +756,6 @@
                         "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.AddBehaviorToBloon, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                       },
                       {
-                        "$type": "Assets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
                         "display": "6947ce19b6cd63047859d7566e4ee07f",
                         "layer": 0,
                         "positionOffset": {
@@ -781,7 +797,6 @@
                   "fireBetweenRounds": true,
                   "behaviors": [
                     {
-                      "$type": "Assets.Scripts.Models.Towers.Weapons.Behaviors.ZeroRotationModel, Assembly-CSharp",
                       "name": "ZeroRotationModel_",
                       "ImplementationType": "Assets.Scripts.Simulation.Towers.Weapons.Behaviors.ZeroRotation, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                     }
@@ -798,7 +813,6 @@
               ],
               "behaviors": [
                 {
-                  "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.RotateToTargetModel, Assembly-CSharp",
                   "onlyRotateDuringThrow": true,
                   "useThrowMarkerHeight": false,
                   "rotateOnlyOnThrow": false,
@@ -809,17 +823,14 @@
                   "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Behaviors.RotateToTarget, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                 },
                 {
-                  "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.AttackFilterModel, Assembly-CSharp",
                   "filters": [
                     {
-                      "$type": "Assets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
                       "isActive": true,
                       "ignoreBroadPhase": true,
                       "name": "FilterInvisibleModel_",
                       "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterInvisible, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                     },
                     {
-                      "$type": "Assets.Scripts.Models.Towers.Filters.FilterOfftrackModel, Assembly-CSharp",
                       "name": "FilterOfftrackModel_Attack",
                       "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterOfftrack, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                     }
@@ -828,7 +839,6 @@
                   "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Behaviors.AttackFilter, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                 },
                 {
-                  "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetTrackOrDefaultModel, Assembly-CSharp",
                   "radius": 43.0,
                   "isSelectable": false,
                   "useTowerRange": true,
@@ -842,7 +852,6 @@
               ],
               "range": 43.0,
               "targetProvider": {
-                "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetTrackOrDefaultModel, Assembly-CSharp",
                 "radius": 43.0,
                 "isSelectable": false,
                 "useTowerRange": true,
@@ -876,7 +885,6 @@
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Abilities.Behaviors.ActivateAttack, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         },
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.Abilities.Behaviors.CreateSoundOnAbilityModel, Assembly-CSharp",
           "sound": {
             "assetId": "f89a5afd603b51844a042d58ac4379de",
             "name": "SoundModel_ActivatedBramblesNoVO",
@@ -912,6 +920,7 @@
       "sharedCooldown": false,
       "dontShowStacked": false,
       "animateOnMainAttackDisplay": false,
+      "restrictAbilityAfterMaxRoundTimer": false,
       "CooldownSpeedScale": 0.0,
       "AnimationOffset": 0.0,
       "IsPassive": false,
@@ -920,14 +929,12 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Abilities.Ability, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.AttackModel, Assembly-CSharp",
       "weapons": [
         {
           "animation": 1,
           "animationOffset": 0.0,
           "animationOffsetFrames": 0,
           "emission": {
-            "$type": "Assets.Scripts.Models.Towers.Behaviors.Emissions.SingleEmissionModel, Assembly-CSharp",
             "behaviors": null,
             "name": "SingleEmissionModel_",
             "ImplementationType": "Assets.Scripts.Simulation.Towers.Emissions.SingleEmission, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
@@ -947,7 +954,6 @@
             "filters": null,
             "behaviors": [
               {
-                "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.CreateTowerModel, Assembly-CSharp",
                 "tower": {
                   "display": "4a0cf9277bdf2354ea066fc0a21f0933",
                   "baseId": "NaturesWardTotem",
@@ -1056,7 +1062,6 @@
                   "ignoreTowerForSelection": false,
                   "behaviors": [
                     {
-                      "$type": "Assets.Scripts.Models.Towers.Behaviors.TowerExpireModel, Assembly-CSharp",
                       "expireOnRoundComplete": false,
                       "expireOnDefeatScreen": false,
                       "lifespanFrames": 899,
@@ -1065,17 +1070,14 @@
                       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.TowerExpire, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                     },
                     {
-                      "$type": "Assets.Scripts.Models.Towers.Behaviors.TowerExpireOnParentDestroyedModel, Assembly-CSharp",
                       "name": "TowerExpireOnParentDestroyedModel_",
                       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.TowerExpireOnParentDestroyed, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                     },
                     {
-                      "$type": "Assets.Scripts.Models.Towers.Behaviors.TowerExpireOnParentDestroyedModel, Assembly-CSharp",
                       "name": "TowerExpireOnParentDestroyedModel_",
                       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.TowerExpireOnParentDestroyed, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                     },
                     {
-                      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnExpireModel, Assembly-CSharp",
                       "effectModel": {
                         "assetId": "d385254f69c7c7d40aebde109bf83d77",
                         "scale": 1.0,
@@ -1094,17 +1096,14 @@
                       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnExpire, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                     },
                     {
-                      "$type": "Assets.Scripts.Models.Towers.Behaviors.IgnoreAllMutatorsTowerModel, Assembly-CSharp",
                       "name": "IgnoreAllMutatorsTowerModel_",
                       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.IgnoreAllMutatorsTower, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                     },
                     {
-                      "$type": "Assets.Scripts.Models.Towers.Behaviors.SavedSubTowerModel, Assembly-CSharp",
                       "name": "SavedSubTowerModel_",
                       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.SavedSubTower, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                     },
                     {
-                      "$type": "Assets.Scripts.Models.Towers.Behaviors.SlowBloonsZoneModel, Assembly-CSharp",
                       "zoneRadius": 32.0,
                       "mutationId": "ObynGreenfoot-Totem-Slow",
                       "isUnique": true,
@@ -1119,7 +1118,6 @@
                       ],
                       "inclusive": false,
                       "mutator": {
-                        "$type": "Assets.Scripts.Models.Towers.Behaviors.SlowBloonsZoneModel+Mutator, Assembly-CSharp",
                         "id": "ObynGreenfoot-Totem-Slow",
                         "isExclusiveInMutationList": false,
                         "priority": 1,
@@ -1134,7 +1132,6 @@
                       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.SlowBloonsZone, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                     },
                     {
-                      "$type": "Assets.Scripts.Models.Towers.Behaviors.SlowBloonsZoneModel, Assembly-CSharp",
                       "zoneRadius": 32.0,
                       "mutationId": "ObynGreenfoot-Totem-Slow",
                       "isUnique": true,
@@ -1149,7 +1146,6 @@
                       ],
                       "inclusive": true,
                       "mutator": {
-                        "$type": "Assets.Scripts.Models.Towers.Behaviors.SlowBloonsZoneModel+Mutator, Assembly-CSharp",
                         "id": "ObynGreenfoot-Totem-Slow",
                         "isExclusiveInMutationList": false,
                         "priority": 1,
@@ -1164,7 +1160,6 @@
                       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.SlowBloonsZone, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                     },
                     {
-                      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnTowerPlaceModel, Assembly-CSharp",
                       "sound1": {
                         "assetId": "0782b04f742eb2542bc8266a38241c5b",
                         "name": "SoundModel_PlaceSound1",
@@ -1189,14 +1184,11 @@
                       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnTowerPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                     },
                     {
-                      "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.AttackModel, Assembly-CSharp",
                       "weapons": [],
                       "behaviors": [
                         {
-                          "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.AttackFilterModel, Assembly-CSharp",
                           "filters": [
                             {
-                              "$type": "Assets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
                               "isActive": true,
                               "ignoreBroadPhase": false,
                               "name": "FilterInvisibleModel_",
@@ -1221,7 +1213,6 @@
                       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Attack, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                     },
                     {
-                      "$type": "Assets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
                       "display": "4a0cf9277bdf2354ea066fc0a21f0933",
                       "layer": -1,
                       "positionOffset": {
@@ -1242,7 +1233,6 @@
                     }
                   ],
                   "footprint": {
-                    "$type": "Assets.Scripts.Models.Towers.Behaviors.CircleFootprintModel, Assembly-CSharp",
                     "radius": 0.0,
                     "doesntBlockTowerPlacement": false,
                     "ignoresPlacementCheck": false,
@@ -1267,6 +1257,7 @@
                   "ignoreCoopAreas": false,
                   "canAlwaysBeSold": false,
                   "isParagon": false,
+                  "sellbackModifierAdd": 0.0,
                   "isPowerTower": false,
                   "IsBaseTower": true,
                   "TargetTypes": null,
@@ -1284,7 +1275,6 @@
                 "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.CreateTower, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
               },
               {
-                "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.AgeModel, Assembly-CSharp",
                 "rounds": 0,
                 "lifespanFrames": 3,
                 "useRoundTime": false,
@@ -1295,14 +1285,12 @@
                 "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.Age, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
               },
               {
-                "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.InstantModel, Assembly-CSharp",
                 "destroyIfInvalid": false,
                 "collisionPass": 0,
                 "name": "InstantModel_",
                 "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.Instant, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
               },
               {
-                "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.CreateSoundOnProjectileExhaustModel, Assembly-CSharp",
                 "sound1": {
                   "assetId": "17550d164ef310542ae78c8e396cb585",
                   "name": "SoundModel_PlaceTotem02",
@@ -1333,7 +1321,6 @@
                 "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.CreateSoundOnProjectileExhaust, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
               },
               {
-                "$type": "Assets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
                 "display": null,
                 "layer": 0,
                 "positionOffset": {
@@ -1374,7 +1361,6 @@
           "fireBetweenRounds": false,
           "behaviors": [
             {
-              "$type": "Assets.Scripts.Models.Towers.Weapons.Behaviors.SubTowerFilterModel, Assembly-CSharp",
               "baseSubTowerId": "NaturesWardTotem",
               "baseSubTowerIds": [
                 "NaturesWardTotem"
@@ -1397,7 +1383,6 @@
       ],
       "behaviors": [
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.RotateToTargetModel, Assembly-CSharp",
           "onlyRotateDuringThrow": true,
           "useThrowMarkerHeight": false,
           "rotateOnlyOnThrow": false,
@@ -1408,7 +1393,6 @@
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Behaviors.RotateToTarget, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         },
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetTrackModel, Assembly-CSharp",
           "isSelectable": false,
           "maxOffset": 0.0,
           "onlyTargetPathsWithBloons": false,
@@ -1419,7 +1403,6 @@
       ],
       "range": 43.0,
       "targetProvider": {
-        "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetTrackModel, Assembly-CSharp",
         "isSelectable": false,
         "maxOffset": 0.0,
         "onlyTargetPathsWithBloons": false,
@@ -1439,13 +1422,11 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Attack, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.PierceSupportModel, Assembly-CSharp",
       "pierce": 1.0,
       "mutatorId": "Obyn:NaturesWrath:PierceDruid",
       "isUnique": true,
       "filters": [
         {
-          "$type": "Assets.Scripts.Models.Towers.TowerFilters.FilterInBaseTowerIdModel, Assembly-CSharp",
           "baseIds": [
             "Druid"
           ],
@@ -1466,7 +1447,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.PierceSupport, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
       "display": "839ec2b0613b8514d91818a69afbac96",
       "layer": -1,
       "positionOffset": {
@@ -1487,7 +1467,6 @@
     }
   ],
   "footprint": {
-    "$type": "Assets.Scripts.Models.Towers.Behaviors.CircleFootprintModel, Assembly-CSharp",
     "radius": 7.0,
     "doesntBlockTowerPlacement": false,
     "ignoresPlacementCheck": false,
@@ -1555,6 +1534,7 @@
   "ignoreCoopAreas": false,
   "canAlwaysBeSold": false,
   "isParagon": false,
+  "sellbackModifierAdd": 0.0,
   "isPowerTower": false,
   "IsBaseTower": false,
   "TargetTypes": [

@@ -107,18 +107,15 @@
   "ignoreTowerForSelection": true,
   "behaviors": [
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.TowerExpireOnParentDestroyedModel, Assembly-CSharp",
       "name": "TowerExpireOnParentDestroyedModel_",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.TowerExpireOnParentDestroyed, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.IgnoreTowersBlockerModel, Assembly-CSharp",
       "filteredTowers": [],
       "name": "IgnoreTowersBlockerModel_",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.IgnoreTowersBlocker, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnPlaceModel, Assembly-CSharp",
       "effectModel": {
         "assetId": null,
         "scale": 1.0,
@@ -137,7 +134,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.VisibilitySupportModel, Assembly-CSharp",
       "isUnique": true,
       "mutatorId": "EtienneUAV",
       "filters": null,
@@ -154,22 +150,18 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.VisibilitySupport, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.SavedSubTowerModel, Assembly-CSharp",
       "name": "SavedSubTowerModel_",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.SavedSubTower, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreditPopsToParentTowerModel, Assembly-CSharp",
       "name": "CreditPopsToParentTowerModel_",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreditPopsToParentTower, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.AttackAirUnitModel, Assembly-CSharp",
       "displayAirUnitModel": null,
       "weapons": [],
       "behaviors": [
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.CenterElipsePatternModel, Assembly-CSharp",
           "widthRadius": 144.0,
           "heightRadius": 144.0,
           "isSelectable": true,
@@ -197,10 +189,8 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.AttackAirUnit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.AirUnitModel, Assembly-CSharp",
       "behaviors": [
         {
-          "$type": "Assets.Scripts.Models.Towers.Behaviors.PathMovementModel, Assembly-CSharp",
           "speed": 90.0,
           "rotation": 360.0,
           "bankRotation": 50.0,
@@ -223,7 +213,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.AirUnit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
       "display": null,
       "layer": -1,
       "positionOffset": {
@@ -244,7 +233,6 @@
     }
   ],
   "footprint": {
-    "$type": "Assets.Scripts.Models.Towers.Behaviors.CircleFootprintModel, Assembly-CSharp",
     "radius": 0.0,
     "doesntBlockTowerPlacement": false,
     "ignoresPlacementCheck": false,
@@ -276,6 +264,7 @@
   "ignoreCoopAreas": false,
   "canAlwaysBeSold": false,
   "isParagon": false,
+  "sellbackModifierAdd": 0.0,
   "isPowerTower": false,
   "IsBaseTower": true,
   "TargetTypes": [
